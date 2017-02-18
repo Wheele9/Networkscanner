@@ -1,27 +1,41 @@
 # Networkscanner
+
 Scan your local network using nmap and python
 
-Preview:
+---
+
+## Preview:
 
 ![alt tag](https://github.com/Wheele9/Networkscanner/blob/master/scan.gif)
 
-# USAGE
+---
 
-Get the MAC adresses of your devices
+## Usage
 
-On Linux: 
+### Install python-nmap: 
 
-ifconfig -a
+`pip install python-nmap`
 
-On Windows:
+### Get the MAC adresses of your devices
 
-ipconfig
+#### On Linux: 
 
-Fill the KNOWN_MACS dictionary in info.py with your devices, and device names
+`ifconfig -a`
 
-Run 
-```
-python scan.py
-```
+#### On Windows: 
+
+`ipconfig`
+
+### Fill the KNOWN_MACS dictionary in info.py with your devices, and device names
+
+### Run 
+
+`sudo python scan.py`
+
+---
+## Enjoy!
+
+
+If you have problem importing nmap, try `sudo $(which python) scan.py`
 
 
